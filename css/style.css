@@ -1,4 +1,53 @@
 .pokedex{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+    width: auto;
+    height: auto;
+}
+
+.container-titulo{
+    text-align: center;
+}
+
+.container-entrada{
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.container-nombrePokemon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-salud{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-Pokemon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-tipoPokemon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h4{
+    text-align: center;
+}
+
+.container-habilidadPokemon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1cm;
 }

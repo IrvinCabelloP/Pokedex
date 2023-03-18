@@ -7,48 +7,66 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Ubicación</title>
     <link rel="stylesheet" href="/css/style.css">
-    <script type="application/JavaScript" src="/javascript/jason.js"></script>
+    
   </head>
-<body>
-  <main>
-      <div class="pokedex">
-        <h2>POKEDEX</h2>
-        <input type="text" id="search" placeholder="Nombre o ID">
-        <div>
-          <h3 id="pokemon" style="font-size: xxx-large">Pokemon</h3>
+  <body>
+    <main>
+        <div class="pokedex">
+          <div class="container-titulo">
+            <h1><em>POKEDEX</em></h1>
+          </div>
+          <div class="container-entrada">
+            <input type="text" id="search" placeholder="Nombre o ID">
+          </div>
+          <div class="container-nombrePokemon">
+            <h3 id="Npokemon" style="font-size: xxx-large">Pokemon</h3>
+          </div>
+            <div class="container-salud">
+              <h4 id="salud">hp</h4>
+            </div>
+            <div class="imagen-Pokemon">
+              <img id="image" src="" alt="">
+            </div>
+            <h4 id="Potipo" style="font-size: xxx-large">Tipo</h4>
+            <div class="container-tipoPokemon">
+              <table class="container-tablaTipoPokemon">
+                <thead>
+                  <tr class="table-dark">
+                    <th>Tipo1</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th id="info1"></th>
+                  </tr>
+                  <tr>
+                    <th id="info2"></th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="container-habilidadPokemon">
+              <table class="table table-bodered table-striped table-light" id="tablap">
+                <thead>
+                  <tr class="table-dark">
+                    <th>Id</th>
+                    <th>Habilidad 1</th>
+                    <th>Habilidad 2</th>
+                    <th>Habilidad 3</th>
+                  </tr>
+                </thead>
+              <tbody>
+                <tr>
+                  <th scope="col" id="pokemonid"></th>
+                  <th id="habilidad1"></th>
+                  <th id="habilidad2"></th>
+                  <th id="habilidad3"></th>
+                </tr>
+              </tbody>
+              </table>
+            </div>
         </div>
-        <div>
-          <h5 id="salud">hp</h5>
-          <div class="window mb-3">
-            <img id="image" src="" alt="" style="height: 30%; width: 30%;">
-          </div>
-          <div>
-            <h4 id="potipo" style="font-size: xxx-large">Tipo</h4>
-          </div>
-          <h3 id="info1" class="window mb-1">Tipo1</h3>
-          <h3 id="info2" class="window mb-3">Tipo2</h3>
-          <div class="container mb-5">
-          <table class="table table-bodered table-striped table-light" id="tablap">
-          <thead>
-            <tr class="table-dark">
-              <th>Id</th>
-              <th>Habilidad 1</th>
-              <th>Habilidad 2</th>
-              <th>Habilidad 3</th>
-            </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="col" id="pokemonid"></th>
-                <th id="habilidad1"></th>
-                <th id="habilidad2"></th>
-                <th id="habilidad3"></th>
-              </tr>
-            </tbody>
-          </table>
-          </div>
-        </div>
-      </div>
-  </main>
-</body>
+    </main>
+  </body>
+  <script src="/javascript/jason.js"></script>
 </html>
