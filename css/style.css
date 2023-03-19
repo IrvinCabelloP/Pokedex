@@ -1,10 +1,18 @@
+main{
+    display: flex;
+    justify-content: center;
+}
+
 .pokedex{
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gainsboro;
-    width: auto;
-    height: auto;
+    align-content: center;
+    flex-direction: column;
+    background-color: rgb(247, 105, 105);
+    width: 400px;
+    height: 600px;
+    border-radius: 1rem;
 }
 
 .container-titulo{
@@ -15,6 +23,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+input{
+    border: none;
+    box-shadow: inset 0 0 5px rgb(0, 0, 0, .5); 
+    border-radius: 1em;
+    width: 80%;
 }
 
 .container-nombrePokemon{
@@ -23,31 +39,59 @@
     align-items: center;
 }
 
+#Npokemon:first-letter {
+    text-transform: uppercase;
+}
+
 .container-salud{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -40px;
 }
 
 .imagen-Pokemon{
+    background-color: rgb(252, 181, 181);
+    width: 130px;
+    height: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -10px;
+    border-radius: 50%;
+}
+
+h4{
+    text-align: center;
+    margin-top: -10px;
 }
 
 .container-tipoPokemon{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-h4{
-    text-align: center;
+    margin-top: 40px;
 }
 
 .container-habilidadPokemon{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1cm;
+}
+
+.container-tablaTipoPokemon{
+    border-collapse: collapse;
+    background-color: rgb(254, 201, 201);
+    margin-top: -20px;
+}
+
+.container-tablaHabilidadPokemon{
+    border-collapse: collapse;
+    background-color: rgb(254, 201, 201);
+    margin-top: 10px;
+}
+
+tr th{
+    border: 1px solid black;
+    padding: 8px;
 }
